@@ -1,0 +1,12 @@
+{
+	"name": "hexo-tag-spotify",
+	"description": "Spotify play button for Hexo",
+	"version": "1.0.0",
+	"main": "index",
+	"author": {
+		"name": "Yordan Ivanov",
+		"email": "mail@ivanovyordan.com",
+		"url": "http://ivanovyordan.com",
+		"license": "MIT"
+	}
+}
