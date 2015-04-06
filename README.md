@@ -16,12 +16,12 @@ Add the tag markup to a post with the url of the content you want to embed.
 
 1. Example with Spotify URI:
 ```
-{% spotify:track:7kkRhGDCAVd5YVoieTChxG %}
+{% spotify spotify:track:7kkRhGDCAVd5YVoieTChxG %}
 ```
 
 2. Example with HTTP link:
 ```
-{% http://open.spotify.com/artist/5p9CTsn5ueGU4oScNX1axu %}
+{% spotify http://open.spotify.com/artist/5p9CTsn5ueGU4oScNX1axu %}
 ```
 
 # Configuration #

@@ -1,7 +1,7 @@
 {
 	"name": "hexo-tag-spotify",
 	"description": "Spotify play button for Hexo",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index",
 	"author": {
 		"name": "Yordan Ivanov",
