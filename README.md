@@ -15,11 +15,13 @@ npm install --save hexo-tag-spotify
 Add the tag markup to a post with the url of the content you want to embed.
 
 1. Example with Spotify URI:
+
 ```
 {% spotify spotify:track:7kkRhGDCAVd5YVoieTChxG %}
 ```
 
 2. Example with HTTP link:
+
 ```
 {% spotify http://open.spotify.com/artist/5p9CTsn5ueGU4oScNX1axu %}
 ```
@@ -29,17 +31,20 @@ Add the tag markup to a post with the url of the content you want to embed.
 You can configure the size, theme and view of the widgets.
 
 Allowed values are:
+
 1. size
-	* large (default)
-	* small
+	* `large` (default)
+	* `compact`
+	* `<width>x<height>`
 2. theme
-	* dark (default)
-	* light
+	* `dark` (default)
+	* `light`
 3. view
-	* list (default)
-	* cover
+	* `list` (default)
+	* `cover`
 
 Example configuration:
+
 ```yml
 spotify:
   size: 'large'
