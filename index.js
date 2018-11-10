@@ -15,6 +15,7 @@ hexo.extend.tag.register('spotify', function(args) {
 		url = 'spotify:' + url;
 	}
 
+	size = config.size;
 	if(config.size === 'large') {
 		size = '300x380';
 	} else if(size === 'compact') {
