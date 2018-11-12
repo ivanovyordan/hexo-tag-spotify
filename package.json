@@ -1,31 +1,31 @@
 {
-	"name": "hexo-tag-spotify",
-	"description": "Spotify play button for Hexo",
-	"version": "1.0.4",
-	"main": "index",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": {
-		"name": "Yordan Ivanov",
-		"email": "mail@ivanovyordan.com",
-		"url": "http://ivanovyordan.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/ivanovyordan/hexo-tag-spotify.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ivanovyordan/hexo-tag-spotify/issues"
-	},
-	"licenses": [{
-		"type": "MIT",
-		"url": "https://github.com/ivanovyordan/hexo-tag-spotify/blob/master/LICENCE"
-	}],
-	"keywords": [
-		"hexo",
-		"spotify",
-		"tag",
-		"widget"
-	]
+  "name": "hexo-tag-spotify",
+  "description": "Spotify play button for Hexo",
+  "version": "1.1.0",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Yordan Ivanov",
+    "email": "mail@ivanovyordan.com",
+    "url": "https://www.ivanovyordan.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivanovyordan/hexo-tag-spotify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivanovyordan/hexo-tag-spotify/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/ivanovyordan/hexo-tag-spotify/blob/master/LICENCE"
+  }],
+  "keywords": [
+    "hexo",
+    "spotify",
+    "tag",
+    "widget"
+  ]
 }

@@ -1,44 +1,27 @@
-hexo.extend.tag.register('spotify', function(args) {
-	var url = args[0];
-	var src = 'https://embed.spotify.com/?uri=';
-	var isTrack = true;
-	var size = null;
+function getUrl(url) {
+  [_, type, key] = url.replace(/(^\w+:|^)\/\//, '').replace('/', ':').split(':');
 
-	var config = hexo.config.spotify || {};
-	config.size = config.size || 'large';
-	config.theme = config.theme || 'dark';
-	config.view = config.view || 'list';
+  return `https://open.spotify.com/embed/${type}/${key}`;
+}
 
-	if(url.indexOf('http://open.spotify.com/') === 0) {
-		url = url.replace('http://open.spotify.com/', '');
-		url = url.replace('/', ':');
-		url = 'spotify:' + url;
-	}
+function getSize(config) {
+  let size = config.size || 'large';
 
-	size = config.size;
-	if(config.size === 'large') {
-		size = '300x380';
-	} else if(size === 'compact') {
-		size = '300x80';
-	}
-	size = size.split('x');
+  if(config.size === 'large') {
+    size = '300x380';
+  } else if(size === 'compact') {
+    size = '300x80';
+  }
 
-	isTrack = url.split(':')[1] === 'track';
-	src += encodeURIComponent(url);
+  return size.split('x');
+}
 
-	if(!isTrack && config.theme === 'light') {
-		src += '&amp;theme=white';
-	}
+function renderSpotify(args) {
+  const config = hexo.config.spotify || {};
+  const url = getUrl(args[0]);
+  const [width, height] = getSize(config);
 
-	if(!isTrack && config.view === 'cover') {
-		src += '&amp;view=coverart';
-	}
+  return `<iframe src="${url}" width="${width}" height="${height}" frameborder="0" allowtransparency="allowtransparency" allow="encrypted-media">`;
+}
 
-	var tag = '<iframe src="' + src + '"';
-	tag += ' width="' + size[0] + '" height="' + size[1] + '"';
-	tag += ' frameborder="0" allowtransparency="true"';
-	tag += ' class="spotify">';
-	tag += '</iframe>';
-
-	return tag;
-});
+hexo.extend.tag.register('spotify', renderSpotify);
