@@ -36,18 +36,10 @@ Allowed values are:
 	* `large` (default)
 	* `compact`
 	* `<width>x<height>`
-2. theme
-	* `dark` (default)
-	* `light`
-3. view
-	* `list` (default)
-	* `cover`
 
 Example configuration:
 
 ```yml
 spotify:
   size: 'large'
-  theme: 'light'
-  view: 'list'
 ```
