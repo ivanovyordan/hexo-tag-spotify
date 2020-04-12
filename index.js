@@ -21,7 +21,7 @@ function renderSpotify(args) {
   const url = getUrl(args[0]);
   const [width, height] = getSize(config);
 
-  return `<iframe src="${url}" width="${width}" height="${height}" frameborder="0" allowtransparency="allowtransparency" allow="encrypted-media">`;
+  return `<iframe src="${url}" width="${width}" height="${height}" frameborder="0" allowtransparency="allowtransparency" allow="encrypted-media"></iframe>`;
 }
 
 hexo.extend.tag.register('spotify', renderSpotify);
